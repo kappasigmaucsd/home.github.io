@@ -1,51 +1,103 @@
-import Timer from "../Tools/Timer";
-import Vimeo from "@u-wave/react-vimeo";
 import React from "react";
-import ig from "../../img/socials/ig.png";
+
+import { StyledRush } from "./Rush.styled";
+import { Icon } from "../icons";
+import Timer from "./timer";
+import Vimeo from "@u-wave/react-vimeo";
 
 const Rush = () => {
+  let contact = [
+    // {
+    //   name: "Snapchat",
+    //   url: "https://www.facebook.com/ucsdkappasig/",
+    //   username: "roach_2117",
+    // },
+    {
+      name: "Instagram",
+      url: "https://www.instagram.com/robert2d2/",
+      username: "robert2d2",
+      chair: "Robert Roach",
+    },
+  ];
+
+  let events = [
+    {
+      name: "Meet the chapters",
+      date: "4/3",
+      time: "6pm PST",
+      location: "",
+    },
+    {
+      name: "Bubble soccer",
+      date: "4/4",
+      time: "6pm PST",
+      location: "",
+    },
+    {
+      name: "Night of 1k wings",
+      date: "4/5",
+      time: "6pm PST",
+      location: "",
+    },
+    {
+      name: "Poker night",
+      date: "4/6",
+      time: "6pm PST",
+      location: "",
+    },
+    {
+      name: "Ring of fire (invite only)",
+      date: "4/7",
+      time: "",
+      location: "",
+    },
+  ];
   return (
-    <div>
-      <div className="rush">
-        <Timer />
+    <StyledRush>
+      <h2>Rush Kappa Sigma</h2>
+      <Timer />
 
-        <div className="signup">
-          <a href="https://forms.gle/1Zo6HvkRMziWQemKA">
-            Click here to sign up for rush
-          </a>
-        </div>
-
-        <Vimeo
-          video="https://vimeo.com/524583682"
-          autoplay
-          muted
-          height="300"
-          width="375"
-        />
+      <div className="signup">
+        <a href="https://forms.gle/1Zo6HvkRMziWQemKA">
+          Click here to sign up for rush
+        </a>
       </div>
-      <div className="rush-contact">
+
+      <Vimeo
+        video="https://vimeo.com/524583682"
+        autoplay
+        muted
+        height="300"
+        width="375"
+      />
+
+      <div className="rush-events">
         <h2>Events: </h2>
-        <p>Day 1 (4/5): House tours / meet the bros 7pm PST</p>
-        <p>Day 2 (4/6): Game night / meet the bros 7pm PST</p>
-        <p>Ring of Fire (4/7): invite only </p>
-        <p>Interviews (4/8): invite only </p>
-        <br />
-
-        <h2>Rush Chairs:</h2>
-
-        <p>Fernando Vazquez</p>
-        <p>(831) 334-9547</p>
-        <a href="https://www.instagram.com/itsfernanflow/">
-          <img src={ig} width="70" alt="Instagram" />
-        </a>
-
-        <p>Christian Velasquez</p>
-        <p>(323) 926-6928</p>
-        <a href="https://www.instagram.com/chris.rar/">
-          <img src={ig} width="70" alt="Instagram" />
-        </a>
+        <ul>
+          {events &&
+            events.map(({ name, date, time, location }, i) => (
+              <li key={i}>
+                {date} - {name} {time} {location}
+              </li>
+            ))}
+        </ul>
       </div>
-    </div>
+
+      <div className="rush-contact">
+        <h2>Rush Chair:</h2>
+        <ul>
+          {contact &&
+            contact.map(({ name, url, username, chair }, i) => (
+              <li key={i}>
+                <p>{chair}</p>
+                <a href={url} aria-label={name}>
+                  <Icon name={name} /> {username}
+                </a>
+              </li>
+            ))}
+        </ul>
+      </div>
+    </StyledRush>
   );
 };
 

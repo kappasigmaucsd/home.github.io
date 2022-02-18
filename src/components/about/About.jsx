@@ -1,11 +1,19 @@
 import React from "react";
+
+import { StyledAbout, StyledText, StyledImage } from "./About.styled";
 import group from "../../img/group_pic_top.JPG";
 
 const About = () => {
   return (
-    <>
-      <div className="about">
+    <StyledAbout>
+      <h2>About Kappa Sigma</h2>
+
+      <StyledImage>
+        <source srcSet={group} alt="Active Brothers" />
         <img src={group} alt="group" />
+      </StyledImage>
+
+      <StyledText>
         <p>
           Fellowship, Leadership, Scholarship, Service. These are the four
           pillars of Kappa Sigma.
@@ -25,8 +33,8 @@ const About = () => {
           brotherhood like no other. Number one, second to none.
         </p>
         <p>A.E.K.Δ.B.</p>
-      </div>
-    </>
+      </StyledText>
+    </StyledAbout>
   );
 };
 

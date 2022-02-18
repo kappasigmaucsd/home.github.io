@@ -1,9 +1,9 @@
 import React from "react";
 
-import { StyledHome, StyledImage } from "./Home.styled";
+import { StyledHome, StyledText, StyledImage } from "./Home.styled";
 import theme from "../../img/themed-letters.png";
 
-import "../../scss/Miami.scss";
+//import "../../scss/Miami.scss";
 
 const Home = () => {
   return (
@@ -11,19 +11,17 @@ const Home = () => {
       <h2>UCSD Kappa Sigma</h2>
 
       <StyledImage>
-        <picture>
-          <source srcSet={theme}></source>
-          <img src={theme} alt="theme" />
-        </picture>
+        <source srcSet={theme}></source>
+        <img src={theme} alt="theme" />
       </StyledImage>
 
-      <div id="title">
-        <h1>
+      <StyledText>
+        <h3 className="big-heading">
           <span>Spring</span>
           <br></br>
           <span>Rush 2022</span>
-        </h1>
-      </div>
+        </h3>
+      </StyledText>
       <p>Number one, second to none.</p>
     </StyledHome>
   );

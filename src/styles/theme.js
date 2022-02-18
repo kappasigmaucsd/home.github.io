@@ -25,7 +25,7 @@ export const theme = {
     &:hover,
     &:active,
     &:focus {
-      color: var(--main);
+      color: var(--pink);
       outline: 0;
     }
   `,

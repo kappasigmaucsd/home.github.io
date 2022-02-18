@@ -1,15 +1,15 @@
 import React from "react";
 import { bool, func } from "prop-types";
 
-import { Squash } from "hamburger-react";
+import { Twirl as Hamburger } from "hamburger-react";
 
 const Burger = ({ open, setOpen, ...props }) => {
   return (
     <div className="burger">
-      <Squash
+      <Hamburger
         toggled={open}
         toggle={setOpen}
-        color="#dd1c1c"
+        color="var(--pink)"
         onClick={() => setOpen(!open)}
         {...props}
       />

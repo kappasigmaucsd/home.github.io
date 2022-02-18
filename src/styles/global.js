@@ -74,7 +74,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: var(--transition);
     &:hover,
     &:focus {
-      color: var(--main);
+      color: var(--pink);
     }
     &.inline-link {
       ${({ theme }) => theme.inlineLink};
@@ -108,7 +108,7 @@ export const GlobalStyles = createGlobalStyle`
           content: '▹';
           position: absolute;
           left: 0;
-          color: var(--main);
+          color: var(--pink);
         }
       }
     }

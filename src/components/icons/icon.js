@@ -7,6 +7,7 @@ import {
   IconLinkedIn,
   IconFacebook,
   IconYouTube,
+  IconSnapchat,
 } from "./";
 
 const Icon = ({ name }) => {
@@ -21,6 +22,8 @@ const Icon = ({ name }) => {
       return <IconFacebook />;
     case "YouTube":
       return <IconYouTube />;
+    case "Snapchat":
+      return <IconSnapchat />;
     default:
       return <IconExternal />;
   }

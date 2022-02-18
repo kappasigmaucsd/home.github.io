@@ -19,7 +19,7 @@ import Home from "./components/home";
 // import Rush from "./components/rush";
 // import Leadership from "./components/leadership";
 // import ContactForm from "./components/contact";
-import { About, NotFound } from "./components";
+import { About, Rush, NotFound } from "./components";
 import Footer from "./components/footnote";
 
 const App = () => {
@@ -47,16 +47,14 @@ const App = () => {
         <>
           <Navbar open={open} setOpen={setOpen} node={node} menuId={menuId} />
 
-          <div className="main">
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              {/* <Route path="/rush" element={<Rush />} />
-              <Route path="/leadership" element={<Leadership />} />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/rush" element={<Rush />} />
+            {/* <Route path="/leadership" element={<Leadership />} />
               <Route path="/contact" element={<ContactForm />} /> */}
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
+            <Route path="*" element={<NotFound />} />
+          </Routes>
 
           <Footer />
         </>

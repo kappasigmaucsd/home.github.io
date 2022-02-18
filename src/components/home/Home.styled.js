@@ -8,11 +8,8 @@ export const StyledHome = styled.section`
 
   min-height: 80vh;
 
-  .headers {
-    padding: 10px 50px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  h2 {
+    //font-family: Fascinate;
   }
 
   animation: gradient 15s ease infinite;
@@ -41,7 +38,55 @@ export const StyledHome = styled.section`
   }
 `;
 
-export const StyledImage = styled.div`
+export const StyledText = styled.div`
+  width: 100%;
+  height: 100%;
+  display: table;
+
+  h3 {
+    text-align: center;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+
+    font-family: Fascinate;
+    // font-size: 8vw;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    span {
+      display: inline-block;
+
+      &:nth-child(1) {
+        color: var(--blue);
+        //text-shadow: 0 0 20px var(--white);
+
+        &:after {
+          content: "";
+          background: var(--blue);
+          position: relative;
+          top: -0.1em;
+          width: clamp(40vw, 43vw, 45vw);
+          height: 1em;
+          display: block;
+          border-radius: 5px;
+          //box-shadow: 0 0 20px var(--white);
+        }
+      }
+
+      &:nth-child(3) {
+        color: var(--pink);
+        letter-spacing: 0.18em;
+        position: relative;
+        top: -1.15em;
+        z-index: 2;
+        text-shadow: 1px 1px 1px var(--blue), 0.2em 0.15em 0 var(--purple);
+      }
+    }
+  }
+`;
+
+export const StyledImage = styled.picture`
   width: auto;
   border-radius: 500px;
 
@@ -50,7 +95,7 @@ export const StyledImage = styled.div`
 
   margin: 50px;
 
-  // img {
-  //   max-width: 400px;
-  // }
+  img {
+    max-width: 300px;
+  }
 `;

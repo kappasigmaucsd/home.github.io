@@ -5,3 +5,4 @@ export { default as IconInstagram } from "./instagram";
 export { default as IconLinkedIn } from "./linkedin";
 export { default as IconFacebook } from "./facebook";
 export { default as IconYouTube } from "./youtube";
+export { default as IconSnapchat } from "./snapchat";

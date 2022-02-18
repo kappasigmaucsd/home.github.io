@@ -1,6 +1,13 @@
 @use "sass:map";
+@import "https://fonts.googleapis.com/css?family=Fascinate";
 
 :root {
+  $black: #222222;
+  $white: #fdfcfa;
+  $blue: #01b7de;
+  $pink: #e97db1;
+  $purple: #433c8a;
+
   --black: #1b1b1b;
   --darker-black: #141414;
   --light-blue: #112240;
@@ -14,6 +21,7 @@
   --light-grey: #a8b2d1;
   --pink: #fa48a0;
   --blue: #2fc4e7;
+  --purple: #433c8a;
   --blue-tint: rgba(5, 60, 65, 0.7);
   --blue-shadow: rgba(2, 12, 27, 0.7);
   --main-tint: rgba(5, 65, 8, 0.7);
