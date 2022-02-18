@@ -14,16 +14,17 @@ import Navbar from "./components/navbar";
 
 /* import homepage components */
 import Opening from "./components/Opening";
-import Home from "./components/Home";
+import Home from "./components/home";
 // import About from "./components/about";
 // import Rush from "./components/rush";
 // import Leadership from "./components/leadership";
 // import ContactForm from "./components/contact";
+import { About, NotFound } from "./components";
 import Footer from "./components/footnote";
 
 const App = () => {
   const [open, setOpen] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const menuId = "main-menu";
   const node = useRef();
@@ -49,11 +50,11 @@ const App = () => {
           <div className="main">
             <Routes>
               <Route path="/" element={<Home />} />
-              {/* <Route path="/about" element={<About />} />
-              <Route path="/rush" element={<Rush />} />
+              <Route path="/about" element={<About />} />
+              {/* <Route path="/rush" element={<Rush />} />
               <Route path="/leadership" element={<Leadership />} />
               <Route path="/contact" element={<ContactForm />} /> */}
-              <Route path="*" element={<div>Not found</div>} />
+              <Route path="*" element={<NotFound />} />
             </Routes>
           </div>
 

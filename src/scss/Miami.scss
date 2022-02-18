@@ -1,0 +1,56 @@
+@import "https://fonts.googleapis.com/css?family=Fascinate";
+
+$black: #222222;
+$white: #fdfcfa;
+$blue: #01b7de;
+$pink: #e97db1;
+$purple: #433c8a;
+
+#title {
+  width: 100%;
+  height: 100%;
+  display: table;
+}
+
+h1 {
+  // background: red;
+  text-align: center;
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+
+  font-family: Fascinate;
+  font-size: 8vw;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  span {
+    display: inline-block;
+
+    &:nth-child(1) {
+      color: $blue;
+      // text-shadow: 0 0 20px $white;
+
+      &:after {
+        content: "";
+        background: $blue;
+        position: relative;
+        top: -0.1em;
+        width: 55vw;
+        height: 1em;
+        display: block;
+        border-radius: 5px;
+        // box-shadow: 0 0 20px $white;
+      }
+    }
+
+    &:nth-child(3) {
+      color: $pink;
+      letter-spacing: 0.18em;
+      position: relative;
+      top: -1.15em;
+      z-index: 2;
+      text-shadow: 1px 1px 1px $blue, 0.2em 0.15em 0 $purple;
+    }
+  }
+}
