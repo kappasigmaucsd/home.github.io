@@ -39,7 +39,8 @@ const Leadership = () => {
   ];
   return (
     <StyledLeadership>
-      <h2>2021 - 2022 Executive Board</h2>
+      <h2>2021 - 2022</h2>
+      <h3>Executive Board</h3>
 
       {EC &&
         EC.map(({ name, title, img, link }, i) => (

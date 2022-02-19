@@ -32,8 +32,7 @@ export const StyledRush = styled.section`
     font-size: var(--fz-lg);
 
     li {
-      position: relative;
-      //padding-left: 30px;
+      //font-size: 1em;
       margin-bottom: 10px;
     }
   }
