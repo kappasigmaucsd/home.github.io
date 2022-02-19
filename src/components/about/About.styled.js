@@ -5,7 +5,7 @@ export const StyledAbout = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
+  //min-height: 100vh;
 
   h2 {
     font-family: Fascinate;

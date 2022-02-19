@@ -1,4 +1,6 @@
 import React from "react";
+
+import { StyledContact } from "./Contact.styled";
 import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
@@ -9,7 +11,9 @@ const Contact = () => {
   }
 
   return (
-    <div className="contact">
+    <StyledContact>
+      <h2>Reach out</h2>
+
       <form onSubmit={handleSubmit}>
         <input
           id="name"
@@ -27,15 +31,10 @@ const Contact = () => {
         />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
         <br />
-        <div className="sub">
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Subject"
-          />
-          <br />
-        </div>
+
+        <input id="subject" type="text" name="subject" placeholder="Subject" />
+        <br />
+
         <textarea
           id="message"
           name="message"
@@ -49,11 +48,11 @@ const Contact = () => {
           errors={state.errors}
         />
         <br />
-        <button type="submit" disabled={state.submitting}>
+        <button className="" type="submit" disabled={state.submitting}>
           Send
         </button>
       </form>
-    </div>
+    </StyledContact>
   );
 };
 

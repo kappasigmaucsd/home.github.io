@@ -14,26 +14,15 @@ export const StyledHome = styled.section`
 
   animation: gradient 15s ease infinite;
 
-  animation: blurFadeIn 0.5s ease-in backwards;
+  animation: fadeIn 2s ease-in backwards;
   animation-delay: 0.5s;
 
-  @keyframes blurFadeIn {
+  @keyframes fadeIn {
     0% {
       opacity: 0;
-      transform: scale(0.7);
-    }
-    20%,
-    75% {
-      opacity: 1;
-      transform: scale(1);
-    }
-  }
-  @keyframes fadeOut {
-    0% {
-      opacity: 1;
     }
     100% {
-      opacity: 0;
+      opacity: 1;
     }
   }
 `;

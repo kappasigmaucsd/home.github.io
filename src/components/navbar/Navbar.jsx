@@ -6,10 +6,13 @@ import FocusLock from "react-focus-lock";
 import Burger from "./burger";
 import Menu from "./menu";
 
+import logo from "../../img/themed-letters.png";
+
 import "../../scss/NavBar.scss";
 
-const NavBar = ({ open, setOpen, node, menuId }) => {
+const NavBar = ({ open, setOpen, node }) => {
   const [isMobile, setIsMobile] = useState(false);
+  const menuId = "main-menu";
 
   //choose the screen size
   const handleResize = () => {
@@ -30,7 +33,9 @@ const NavBar = ({ open, setOpen, node, menuId }) => {
   return (
     <Navbar className="fixed-top">
       <Container>
-        <Navbar.Brand href="/">Kappa Sigma</Navbar.Brand>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="#RushKSig" />
+        </Navbar.Brand>
         <Navbar.Collapse className="justify-content-end">
           {isMobile ? (
             <Nav>

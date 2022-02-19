@@ -1,5 +1,6 @@
 import React from "react";
 import { Icon } from "../icons";
+
 /* images */
 import crest from "../../img/crest.png";
 import { StyledFooter, StyledSocialLinks, StyledCredit } from "./Footer.styled";
@@ -37,7 +38,12 @@ const Footer = () => {
       <StyledCredit>
         <p>Pi-Psi Chapter of Kappa Sigma</p>
 
-        {/* <img src={crest} alt="Kappa Sigma Crest" width="110" height="100" /> */}
+        <a href="https://www.kappasigma.org">
+          <picture>
+            <source src={crest} />
+            <img src={crest} alt="Kappa Sigma Crest" />
+          </picture>
+        </a>
 
         <p>@2022 by Kappa Sigma</p>
       </StyledCredit>

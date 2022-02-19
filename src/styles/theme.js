@@ -108,15 +108,6 @@ export const theme = {
     }
   `,
 
-  boxShadow: css`
-    box-shadow: 0 10px 30px -15px var(--blue-shadow);
-    transition: var(--transition);
-    &:hover,
-    &:focus {
-      box-shadow: 0 20px 30px -15px var(--blue-shadow);
-    }
-  `,
-
   fancyList: css`
     padding: 0;
     margin: 0;

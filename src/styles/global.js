@@ -105,7 +105,7 @@ export const GlobalStyles = createGlobalStyle`
         padding-left: 30px;
         margin-bottom: 10px;
         &:before {
-          content: '▹';
+          content: '';
           position: absolute;
           left: 0;
           color: var(--pink);

@@ -9,7 +9,6 @@ export const StyledRush = styled.section`
   h2 {
     font-family: Fascinate;
     border-radius: 5px;
-    //background-color: var(--blue);
 
     & {
       color: var(--pink);
@@ -20,20 +19,43 @@ export const StyledRush = styled.section`
     }
   }
 
-  .rush-contact {
-    // display: flex;
-    // flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
+  iframe {
+    padding: 15px;
+    // background-color: var(--pink);
+    border-radius: 5px;
+  }
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: var(--fz-lg);
+
+    li {
+      position: relative;
+      //padding-left: 30px;
+      margin-bottom: 10px;
     }
+  }
 
+  .rush-events,
+  .rush-contacts {
+    width: 80%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .rush-contact {
     li > p {
       font-size: 1.5em;
+    }
+
+    li > a {
+      margin: 0;
+      padding: 0;
     }
 
     svg {
