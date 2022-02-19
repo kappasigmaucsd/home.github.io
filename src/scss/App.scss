@@ -1,0 +1,48 @@
+@use "sass:map";
+@import "https://fonts.googleapis.com/css?family=Fascinate";
+
+:root {
+  $black: #222222;
+  $white: #fdfcfa;
+  $blue: #01b7de;
+  $pink: #e97db1;
+  $purple: #433c8a;
+
+  --black: #1b1b1b;
+  --darker-black: #141414;
+  --light-blue: #112240;
+  --lightest-blue: #233554;
+  --white: #fff;
+  --main: #dd1c1c;
+  --green: #176617;
+  --dark-grey: #495670;
+  --grey: #8892b0;
+  --lightest-grey: #ccd6f6;
+  --light-grey: #a8b2d1;
+  --pink: #fa48a0;
+  --blue: #2fc4e7;
+  --purple: #433c8a;
+  --blue-tint: rgba(5, 60, 65, 0.7);
+  --blue-shadow: rgba(2, 12, 27, 0.7);
+  --main-tint: rgba(5, 65, 8, 0.7);
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  --tab-height: 42px;
+  --tab-width: 120px;
+
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-xxl: 22px;
+  --fz-heading: 32px;
+
+  // Uncomment for debugging purposes
+  // * {
+  //   border: 1px dashed red;
+  // }
+}
