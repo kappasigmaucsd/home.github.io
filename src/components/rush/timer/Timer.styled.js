@@ -5,7 +5,7 @@ export const StyledTimer = styled.div`
   border-radius: 50px;
   padding: 10px 25px;
 
-  font-size: 2rem;
+  font-size: 1.5rem;
 
   margin: 15px;
 

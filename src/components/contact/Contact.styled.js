@@ -64,7 +64,6 @@ export const StyledContact = styled.section`
       &:hover,
       &:focus,
       &:active {
-        background-color: var(--main-tint);
         outline: none;
       }
       &:after {
