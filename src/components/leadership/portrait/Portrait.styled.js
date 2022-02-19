@@ -27,6 +27,12 @@ export const StyledPortrait = styled.div`
       height: 20px;
       color: var(--white);
     }
+    .card-title {
+      background-color: var(--pink);
+      border-radius: 5px;
+      padding: 5px;
+      font-size: 1em;
+    }
     .portrait-details {
       display: flex;
       flex-direction: column;
