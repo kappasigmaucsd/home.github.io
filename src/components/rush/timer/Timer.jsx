@@ -5,7 +5,7 @@ import { StyledTimer } from "./Timer.styled";
 const Timer = () => {
   const calculateTimeLeft = () => {
     let year = new Date().getFullYear();
-    const difference = +new Date(`4/5/${year}`) - +new Date();
+    const difference = +new Date(`4/3/${year}`) - +new Date();
 
     let timeLeft = {};
 
