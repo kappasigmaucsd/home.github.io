@@ -77,7 +77,7 @@ const Rush = () => {
           {events &&
             events.map(({ name, date, time, location }, i) => (
               <li key={i}>
-                {date} - {name} {time} {location}
+                {date}: {name} {time} {location}
               </li>
             ))}
         </ul>

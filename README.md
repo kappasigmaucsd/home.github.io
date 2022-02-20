@@ -2,7 +2,8 @@
   <img src="./src/img/banner.png" alt="Kappa Sigma banner" width=400/>
   <h1>kappasgimaucsd.org</h1>
   <p>The official website for the Pi-Psi Chapter of Kappa Sigma. Built with <a href="https://github.com/facebook/create-react-app">React</a>, hosted on <a href="">Netlify</a>.</p>
-</div>
+  
+  [![Netlify Status](https://api.netlify.com/api/v1/badges/741a4717-598b-413d-b516-bd38f3200944/deploy-status)](https://app.netlify.com/sites/goofy-saha-b95c64/deploys)
 
 <hr />
 

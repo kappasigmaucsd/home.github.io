@@ -30,38 +30,7 @@ export const theme = {
     }
   `,
 
-  inlineLink: css`
-    display: inline-block;
-    text-decoration: none;
-    text-decoration-skip-ink: auto;
-    position: relative;
-    transition: var(--transition);
-    color: var(--main);
-    &:hover,
-    &:focus,
-    &:active {
-      color: var(--main);
-      outline: 0;
-      &:after {
-        width: 100%;
-      }
-      & > * {
-        color: var(--main) !important;
-        transition: var(--transition);
-      }
-    }
-    &:after {
-      content: "";
-      display: block;
-      width: 0;
-      height: 1px;
-      position: relative;
-      bottom: 0.2em;
-      background-color: var(--main);
-      transition: var(--transition);
-      opacity: 0.6;
-    }
-  `,
+  inlineLink: css``,
 
   smallButton: css`
     color: var(--main);
@@ -84,50 +53,5 @@ export const theme = {
     &:after {
       display: none !important;
     }
-  `,
-
-  bigButton: css`
-    color: var(--main);
-    background-color: transparent;
-    border: 1px solid var(--main);
-    border-radius: 4px;
-    padding: 1.25rem 1.75rem;
-    font-size: var(--fz-sm);
-    line-height: 1;
-    text-decoration: none;
-    cursor: pointer;
-    transition: var(--transition);
-    &:hover,
-    &:focus,
-    &:active {
-      background-color: var(--main-tint);
-      outline: none;
-    }
-    &:after {
-      display: none !important;
-    }
-  `,
-
-  fancyList: css`
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    font-size: var(--fz-lg);
-    li {
-      position: relative;
-      padding-left: 30px;
-      margin-bottom: 10px;
-      &:before {
-        content: "▹";
-        position: absolute;
-        left: 0;
-        color: var(--main);
-      }
-    }
-  `,
-  resetList: css`
-    list-style: none;
-    padding: 0;
-    margin: 0;
   `,
 };
