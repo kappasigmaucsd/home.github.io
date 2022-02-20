@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@formspree/react": "^2.2.3",
-    "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.8.0",
     "@u-wave/react-vimeo": "^0.9.3",
@@ -29,7 +28,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --silent --coverage",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -50,7 +49,15 @@
       "last 1 safari version"
     ]
   },
+  "jest": {
+    "testEnvironment": "jsdom",
+    "moduleNameMapper": {
+      ".(jpg|jpeg|pdf|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      ".(css|less|scss)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.16.2",
     "gh-pages": "^3.1.0"
   }
 }
