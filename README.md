@@ -5,6 +5,8 @@
   
   [![Netlify Status](https://api.netlify.com/api/v1/badges/741a4717-598b-413d-b516-bd38f3200944/deploy-status)](https://app.netlify.com/sites/goofy-saha-b95c64/deploys)
 
+  </div>
+
 <hr />
 
 ## Available Scripts
